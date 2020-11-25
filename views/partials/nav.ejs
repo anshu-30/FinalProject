@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Expense</title>
+	<link rel="stylesheet" type="text/css" href="/expense.css">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+<nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-link" href="/">Homepage</a>
+                <a class="nav-link" href="/main">Expense Tracker</a>
+                <a class="nav-link" href="/expense">All Expenses</a>
+                <a class="nav-link" href="/new">New Expense</a>
+                <a class="nav-link" href="/aboutus/about">About Us</a>
+            </div>
+            <div class="navbar-nav ml-auto"> 
+                <div style="color:white; display: flex; align-items: center;">
+                    <span>Search</span>
+                    <i class="fa fa-search"></i>
+                </div>  
+                
+                <form action="/search" method="GET">
+                    <input type="date" name="date" style="width: 200px; height: 20px; border-radius: 20px;" placeholder="Search by name or date">
+                    <button style="display: none;"></button>   
+                </form>
+                <a class="nav-link" href="/logout">Logout</a>
+            </div>
+        </div>
+    </div>
+</nav>
+<% if(message && message.length>0){ %>}
+<div class="container">
+	<div class="alert alert-success" role="alert">
+		<%= message %>
+	</div>
+</div>
+<% } %>
+
+
+</body>
+</html>
