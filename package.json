@@ -6,7 +6,6 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node index.js"
   },
-  
   "dependencies": {
     "connect-flash": "^0.1.1",
     "ejs": "^3.1.5",
@@ -24,5 +23,15 @@
   },
   "keywords": [],
   "devDependencies": {},
-  "description": ""
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anshu-30/FinalProject.git"
+  },
+  "author": "Anshu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/anshu-30/FinalProject/issues"
+  },
+  "homepage": "https://github.com/anshu-30/FinalProject#readme",
+  "description": "Node Api hosted on heroku"
 }

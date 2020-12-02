@@ -43,7 +43,7 @@ app.use(flash())
 app.use(express.urlencoded({ extended:false},{useUnifiedTopology : true }));
 
 
-const PORT=process.env.PORT || 1500; //to deploy
+const PORT=process.env.PORT || 1800; //to deploy
 
 
 
